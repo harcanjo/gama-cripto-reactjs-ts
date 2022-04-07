@@ -1,10 +1,15 @@
 import React from "react";
 
+import Nav from "../../Components/Nav";
+import Footer from "../../Components/Footer";
+
 const Home: React.FC = () => {
     return(
-        <div>
-            <h1>Home Page</h1>
-        </div>
+        <>
+            <Nav />
+            <h1>Home</h1>
+            <Footer />
+        </>
     )
 }
 
