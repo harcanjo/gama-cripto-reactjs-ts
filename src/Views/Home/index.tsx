@@ -5,9 +5,18 @@ import Footer from "../../Components/Footer";
 
 import { apiData } from "../../services/apiData";
 
+import { IBlockChainData } from "../../interfaces";
+import Constants from "../../Constants";
+
 const Home: React.FC = () => {
 
-    const [data, setData] = useState({});
+    const [data, setData] = useState<IBlockChainData>({} as IBlockChainData);
+
+    useEffect(() => {
+        apiData.get("stores").then(
+            res => console.log(res.data)            
+        )        
+    }, [])
 
     return(
         <>
