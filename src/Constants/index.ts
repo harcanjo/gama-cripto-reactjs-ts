@@ -1,5 +1,5 @@
 const defaultData = {
-    apiKey: ""
+    apiKey: "..."
 }
 
 export default defaultData;
